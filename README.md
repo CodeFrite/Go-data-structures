@@ -16,6 +16,15 @@ Each data structure code comes along with test cases. This will allow me to:
 
 ## Heaps
 
-In this implementation, I have used an array to represent the heap. In order to support both, min & max heaps, I have 
+### Design choices
+
+In this implementation, I have used an array to represent the heap. The alternative would be to use nodes to construct a tree structure.
+In order to support both, min & max heaps, I have 
+
+### Code walkthrough
+
+### Expected time & space complexity
+
+### Compare performance against brute force & go standard library implementation [https://pkg.go.dev/container/heap](https://pkg.go.dev/container/heap)
 
 ## Binary Trees
