@@ -8,7 +8,9 @@ After completing the Consensys Blockchain Developer Bootcamp, I wanted to dive d
 
 In order to do so, I have decided to dive into the GO-Ethereum implementation. Since Go is a new language to me and since I was expecting the GO-Ethereum implementation to be top edge, I decided to begin by first recoding all the basic data structures that we traditionnaly use.
 
-In order to validate my code and allow me to improve the code in the future without breaking the code without being aware, each data structure code comes along with test cases.
+Each data structure code comes along with test cases. This will allow me to:
+- Test my initial code version 
+- Allow me to spot any regression in the future if I decide to change/improve it
 
 # Covered data structures
 
