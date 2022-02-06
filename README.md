@@ -19,7 +19,38 @@ Each data structure code comes along with test cases. This will allow me to:
 ### Design choices
 
 In this implementation, I have used an array to represent the heap. The alternative would be to use nodes to construct a tree structure.
-In order to support both, min & max heaps, I have 
+In order to support both, min & max heaps, I have include in the Heap structure a `heapType` and 2 constants:
+
+```
+const (
+	HEAP_TYPE_MAX = iota
+	HEAP_TYPE_MIN
+)
+
+type Heap struct {
+	data     []int
+	heapType int
+}
+```
+
+Depending on the heapType, the function will either reorganise the values from min to max or the opposite:
+
+```
+func (h *Heap) heapify() {
+	nodeIdx := len(h.data) - 1
+	if h.heapType == HEAP_TYPE_MAX {
+		for h.data[nodeIdx] > h.data[getParentIdx(nodeIdx)] {
+			h.swapData(nodeIdx, getParentIdx(nodeIdx))
+			nodeIdx = getParentIdx(nodeIdx)
+		}
+	} else if h.heapType == HEAP_TYPE_MIN {
+		for h.data[nodeIdx] < h.data[getParentIdx(nodeIdx)] {
+			h.swapData(nodeIdx, getParentIdx(nodeIdx))
+			nodeIdx = getParentIdx(nodeIdx)
+		}
+	}
+}
+```
 
 ### Code walkthrough
 
