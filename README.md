@@ -56,6 +56,14 @@ func (h *Heap) heapify() {
 
 ### Expected time & space complexity
 
+## Inserting an element
+
+| Criteria | Heap    |   |   |   |
+|----------|---------|---|---|---|
+| Worst    | O(logN) |   |   |   |
+| Average  | O(logN) |   |   |   |
+| Best     | O(1)    |   |   |   |
+
 ### Compare performance against brute force & go standard library implementation [https://pkg.go.dev/container/heap](https://pkg.go.dev/container/heap)
 
 ## Binary Trees
