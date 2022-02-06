@@ -52,6 +52,8 @@ func (h *Heap) heapify() {
 }
 ```
 
+Note: change int to bool for better perf? [link](https://stackoverflow.com/questions/44848595/performance-of-bool-vs-int-array)
+
 ### Code walkthrough
 
 ### Expected time & space complexity
@@ -63,6 +65,24 @@ func (h *Heap) heapify() {
 | Worst    | O(logN) |   |   |   |
 | Average  | O(logN) |   |   |   |
 | Best     | O(1)    |   |   |   |
+
+## Deleting an element
+
+| Criteria | Heap    |   |   |   |
+|----------|---------|---|---|---|
+| Worst    | O(logN) |   |   |   |
+| Average  | O(logN) |   |   |   |
+| Best     | O(1)    |   |   |   |
+
+## Searching an element
+
+| Criteria | Heap |   |   |   |
+|----------|------|---|---|---|
+| Worst    | O(N) |   |   |   |
+| Average  | O(N) |   |   |   |
+| Best     | O(1) |   |   |   |
+
+## 
 
 ### Compare performance against brute force & go standard library implementation [https://pkg.go.dev/container/heap](https://pkg.go.dev/container/heap)
 
